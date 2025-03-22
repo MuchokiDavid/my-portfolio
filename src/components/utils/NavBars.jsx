@@ -30,7 +30,7 @@ export default function NavBars() {
               rel="noopener noreferrer"
             >
               <span><MdCloudDownload className="h-5 w-5"/></span>
-              Get CV
+              View CV
             </a>
             <button
               data-collapse-toggle="mobile-menu-2"

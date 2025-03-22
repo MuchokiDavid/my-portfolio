@@ -52,7 +52,7 @@ export default function AboutHero() {
               target="_blank"
               class="p-2 px-6 text-white font-semibold rounded-full outline-2 outline-yellow-500 hover:bg-yellow-600 transition ease-in-out delay-150"
             >
-              Download CV
+              View CV
             </a>
           </div>
         </div>
