@@ -37,13 +37,14 @@ export default function AboutHero() {
 
           <p class="mt-4 text-lg capitalize">
             Experienced full-stack developer with 2+ years of expertise in
-            Git, Javascript, React JS, React Vite, Python, Django, Flask, and some
-            Express experience.
+            Linux, Git, Javascript, React JS, React Vite, Python, Django, Flask,
+            and some Express experience.
           </p>
           <div class=" mt-6 flex sm:flex-row flex-col gap-4 sm:justify-start justify-center">
-            <a 
-            href="#contact"
-            class="p-2 px-6 text-white font-semibold rounded-full outline-2 outline-green-500 hover:bg-green-600 transition ease-in-out delay-150">
+            <a
+              href="#contact"
+              class="p-2 px-6 text-white font-semibold rounded-full outline-2 outline-green-500 hover:bg-green-600 transition ease-in-out delay-150"
+            >
               Hire Me
             </a>
             <a
