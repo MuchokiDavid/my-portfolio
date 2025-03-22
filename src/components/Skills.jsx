@@ -7,9 +7,8 @@ import {
   FaPython,
   FaGitAlt,
   FaLinux,
-  FaDatabase,
 } from "react-icons/fa";
-import { SiDjango, SiFlask, SiPostgresql, SiMysql, SiCpanel, SiPostman } from "react-icons/si";
+import { SiDjango, SiFlask, SiPostgresql, SiMysql, SiCpanel, SiPostman, SiNpm } from "react-icons/si";
 import { IoLogoFigma } from "react-icons/io5";
 
 
@@ -18,19 +17,20 @@ export default function Skills() {
     <div id="skills">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-20">
-          <h1 className="sm:text-4xl text-3xl font-medium title-font text-gray-800 mb-4">
-            My Skills
+          <h1 className="sm:text-4xl text-3xl font-medium title-font text-gray-300 mb-4">
+            Skills
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
             I have a wide range of skills and I am always looking to learn new
             things. I am currently learning how to use Django and React and I am looking to
             learn more about the mobile apps side of things.
           </p>
-          <div className="flex mt-6 justify-center">
+          <div className="flex mt-4 justify-center">
             <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
         </div>
-        <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+        {/* <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"> */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 place-items-center">
           {/* HTML */}
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-800 rounded flex p-4 h-full items-center">
@@ -49,7 +49,7 @@ export default function Skills() {
 
           {/* JavaScript */}
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+            <div className="bg-gray-800 rounded flex p-4 h-full items-center w-fit"> 
               <FaJs className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">JavaScript</span>
             </div>
@@ -57,7 +57,7 @@ export default function Skills() {
 
           {/* React */}
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+            <div className="bg-gray-800 rounded flex p-4 h-full items-center w-fit">
               <FaReact className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">React</span>
             </div>
@@ -113,7 +113,7 @@ export default function Skills() {
 
           {/* PostgreSQL */}
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+            <div className="bg-gray-800 rounded flex p-4 h-full w-fit items-center">
               <SiPostgresql className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">PostgreSQL</span>
             </div>
@@ -135,11 +135,18 @@ export default function Skills() {
             </div>
           </div>
 
-          {/* MySQL */}
+          {/* npm */}
           <div className="p-2 sm:w-1/2 w-full">
             <div className="bg-gray-800 rounded flex p-4 h-full items-center">
               <SiPostman className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">Postman</span>
+            </div>
+          </div>
+
+          <div className="p-2 sm:w-1/2 w-full">
+            <div className="bg-gray-800 rounded flex p-4 h-full items-center">
+              <SiNpm className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
+              <span className="title-font font-medium text-white">NPM</span>
             </div>
           </div>
 
