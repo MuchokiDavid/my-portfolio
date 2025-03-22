@@ -49,7 +49,7 @@ export default function Skills() {
 
           {/* JavaScript */}
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center w-fit"> 
+            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center"> 
               <FaJs className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">JavaScript</span>
             </div>
@@ -57,7 +57,7 @@ export default function Skills() {
 
           {/* React */}
           <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center w-fit">
+            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
               <FaReact className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
               <span className="title-font font-medium text-white">React</span>
             </div>
