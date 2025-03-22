@@ -1,19 +1,19 @@
 import React from 'react'
 import Hero from './components/Hero'
-import NavBars from './components/NavBars'
-import Footer from './components/Footer'
+import NavBars from './components/utils/NavBars'
+import Footer from './components/utils/Footer'
 import Work from './components/Work'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Skills from './components/Skills'
-import About from './components/About'
+import Education from './components/Education'
 
 export default function App() {
   return (
     <div>
       <NavBars/>
       <Hero/>
-      <About/>
+      <Education/>
       <Skills/>
       <Work/>
       <Projects/>
