@@ -25,10 +25,10 @@ const Projects = () => {
         "Implemented user authentication and authorization using JWT tokens.",
         "Supported multiple user roles and permissions.",
       ],
-      technologies: ["React", "Django", "Python", "Postgres", "Payment API", "Git", "Jira", "Agile", "PPRA API"],
+      technologies: ["React", "Django", "Python", "Postgres", "Cloudinary","Payment API", "Git", "Jira", "Agile", "PPRA API"],
     },
     {
-      title: "Niloyd Insuarance platform",
+      title: "Niloyd Insurance platform",
       githubLink: "https://github.com/tyneitafrica/insure_backend",
       liveLink: "https://insure-frontend.vercel.app",
       description: [
@@ -39,10 +39,10 @@ const Projects = () => {
         "Supported multiple user roles and permissions.",
         "Implemented insurance policy creation and management.",
       ],
-      technologies: ["React", "Django", "Python", "Postgres", "Payment API", "Git", "Jira", "Agile", "Daraja API"],
+      technologies: ["React", "Django", "Python", "Postgres", "Cloudinary", "Git", "Jira", "Agile", "Daraja API"],
     },
     {
-      title: "Msaada Fund",
+      title: "MsaadaFund",
       githubLink: "https://github.com/MuchokiDavid/Msaadafund-Frontend",
       liveLink: "https://www.msaadafund.com",
       description: [
@@ -59,7 +59,7 @@ const Projects = () => {
       description: [
         "Built a Python web service to calculate loyalty points based on customer transactions.",
         "Integrated Google Sheets API for data fetching and updates.",
-        "Sent notifications to customers about their loyalty points.",
+        "Sent notifications sms to customers about their loyalty points.",
       ],
       technologies: ["Python", "Flask", "Google Sheets API", "Cpanel", "Git"],
     },
