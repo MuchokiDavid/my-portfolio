@@ -17,7 +17,7 @@ export default function Experience() {
   const experiences = [
     {
       title: "Software Developer",
-      company: "Type IT Consulting",
+      company: "Tyne IT Consulting",
       location: "Nairobi, Kenya",
       period: "October 2024 - Present",
       description: [
