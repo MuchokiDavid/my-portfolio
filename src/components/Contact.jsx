@@ -60,7 +60,7 @@ export default function Contact() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             {/* Left Column - Contact Information */}
             <div className="lg:col-span-2 lg:py-12">
