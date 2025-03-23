@@ -5,8 +5,8 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <div>
-      <hr className="border-t border-gray-100 dark:border-gray-400" />
-      <footer className="">
+      {/* <hr className="border-t border-gray-100 dark:border-gray-400" /> */}
+      <footer className="bg-gray-900">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
             Let's connect! Feel free to reach out via{" "}
@@ -15,6 +15,7 @@ export default function Footer() {
               href="https://github.com/MuchokiDavid"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75 hover:underline"
             >
               GitHub
             </a>
@@ -152,6 +153,11 @@ export default function Footer() {
               </a>
             </li>
           </ul>
+          <div className="mt-12 text-center">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              &copy; David Muchoki. All rights reserved.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
