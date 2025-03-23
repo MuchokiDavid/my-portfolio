@@ -11,7 +11,7 @@ export default function NavBars() {
 
   return (
     <>
-      <nav className="bg-white border-gray-200 py-3 dark:bg-gray-900 sticky top-0 z-10">
+      <nav className="border-gray-200 py-3 bg-gray-900 sticky top-0 z-10">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
           <a href="#" className="flex items-center">
             <img src={cv} className="h-4 mr-3 sm:h-8" alt="Portfolio Logo" />
