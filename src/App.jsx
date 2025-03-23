@@ -12,15 +12,15 @@ export default function App() {
   return (
     <div>
       <NavBars />
-      <div className="container mx-auto max-w-8xl px-10">
-        <Hero />
-        <Education />
-        <Skills />
-        <Work />
-        <Projects />
-        <Contact />
+      <div className="container mx-auto max-w-8xl px-2">
+        <Hero /> {/* Introduction and key highlights */}
+        <Skills /> {/* Core competencies */}
+        <Work /> {/* Professional experience */}
+        <Projects /> {/* Showcase of projects */}
+        <Education /> {/* Educational background */}
+        <Contact /> {/* Contact information */}
       </div>
-      <Footer />
+      <Footer /> {/* Footer with additional links */}
     </div>
   );
 }
