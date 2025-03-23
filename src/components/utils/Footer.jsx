@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -100,6 +100,18 @@ export default function Footer() {
                     clipRule="evenodd"
                   />
                 </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/254723018212"
+                rel="noreferrer"
+                target="_blank"
+                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+              >
+                <span className="sr-only">WhatsApp</span>
+                <FaWhatsapp className="w-6 h-6" />
               </a>
             </li>
 
