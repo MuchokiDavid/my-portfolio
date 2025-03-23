@@ -74,6 +74,7 @@ export default function Contact() {
               <div className="mt-8">
                 <a
                   href="mailto:dmmuchoki7@gmail.com"
+                  target="_blank"
                   className="text-2xl font-bold text-purple-600 hover:text-purple-700"
                 >
                   dmmuchoki7@gmail.com
@@ -87,7 +88,7 @@ export default function Contact() {
             </div>
 
             {/* Right Column - Contact Form */}
-            <div className="rounded-lg border border-white p-8 shadow-lg lg:col-span-3 lg:p-12">
+            <div className="rounded-lg bg-gray-800 border border-gray-700 p-8 shadow-lg lg:col-span-3 lg:p-12">
               {/* <ContactForm/> */}
               <form action="#" onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -95,7 +96,7 @@ export default function Contact() {
                     Name
                   </label>
                   <input
-                    className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:border-blue-500 focus:ring-blue-500"
+                    className="w-full rounded-lg border border-gray-500 p-3 text-sm focus:border-purple-500 focus:ring-purple-500"
                     placeholder="Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -111,7 +112,7 @@ export default function Contact() {
                       Email
                     </label>
                     <input
-                      className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:border-blue-500 focus:ring-blue-500"
+                      className="w-full rounded-lg border border-gray-500 p-3 text-sm focus:border-purple-500 focus:ring-purple-500"
                       placeholder="Email address"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
@@ -126,7 +127,7 @@ export default function Contact() {
                       Phone
                     </label>
                     <input
-                      className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:border-blue-500 focus:ring-blue-500"
+                      className="w-full rounded-lg border border-gray-500 p-3 text-sm focus:border-purple-500 focus:ring-purple-500"
                       placeholder="Phone Number"
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
@@ -141,7 +142,7 @@ export default function Contact() {
                     Message
                   </label>
                   <textarea
-                    className="w-full rounded-lg border border-gray-200 p-3 text-sm focus:border-blue-500 focus:ring-blue-500"
+                    className="w-full rounded-lg border border-gray-500 p-3 text-sm focus:border-purple-500 focus:ring-purple-500"
                     placeholder="Message"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
@@ -154,7 +155,7 @@ export default function Contact() {
                 <div className="mt-4">
                   <button
                     type="submit"
-                    className="inline-block w-full rounded-lg bg-purple-600 px-5 py-3 font-medium text-white hover:bg-blue-700 sm:w-auto"
+                    className="inline-block w-full rounded-lg bg-purple-600 px-5 py-3 font-medium text-white hover:bg-purple-700 sm:w-auto"
                   >
                     {loading ? "Sending...": "Send Message"}
                   </button>
