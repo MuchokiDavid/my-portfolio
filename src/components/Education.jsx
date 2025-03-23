@@ -3,7 +3,7 @@ import React from "react";
 export default function Education() {
   return (
     // <div id="education" className="mb-8">
-      <div id="education" className="flex flex-col justify-between h-full px-10 mx-auto xl:px-0 mt-5">
+      <div id="education" className="flex flex-col justify-between h-full mx-auto xl:px-0 mt-5">
         <div className="text-center">
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-gray-300 mb-4">
             Education
