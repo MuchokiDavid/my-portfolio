@@ -7,7 +7,7 @@ body {
   font-family: 'Nunito', sans-serif;
   @apply bg-black text-white;
   /* @apply bg-[url(./assets/bg.jpg)]; */
-  background-image: url('https://images.unsplash.com/photo-1618335829737-2228915674e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGNvZGluZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+  background-image: url('https://img.freepik.com/free-vector/modern-desktop-background-geometric-blue-design-vector_53876-135923.jpg?t=st=1742723233~exp=1742726833~hmac=3006ede1c8a82bee0b17a2fd59459110f5c247a0bf14f0fe79c71952cf4c7837&w=996');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
