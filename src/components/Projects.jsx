@@ -19,7 +19,7 @@ const Projects = () => {
       githubLink: "https://github.com/tyneitafrica/e-procurement-frontend",
       liveLink: "https://procure360.vercel.app",
       description: [
-        "Developed a procurement platform for a government agency.",
+        "Developed a procurement platform for tyne IT consultancy.",
         "Implemented a user-friendly interface for suppliers and buyers.",
         "Integrated with PPRA API for real-time government data synchronization.",
         "Implemented user authentication and authorization using JWT tokens.",
