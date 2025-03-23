@@ -68,7 +68,7 @@ export default function Skills() {
         { name: "Django", icon: <SiDjango color="#092E20" /> },
         { name: "Flask", icon: <SiFlask color="#000000" /> },
         { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
-        { name: "Ngrok", icon: <SiNgrok color="#E10098" /> },
+        { name: "Ngrok", icon: <SiNgrok className="text-blue-500" /> },
       ]
     },
     {
@@ -134,7 +134,7 @@ export default function Skills() {
               {/* Loop through skills in this stack */}
               {stack.skills.map((skill, skillIndex) => (
                 <div key={skillIndex} className="p-2 w-full">
-                  <div className="bg-gray-700 rounded flex p-4 h-full items-center cursor-pointer shadow-lg hover:bg-gray-600 transition duration-300 hover:scale-105 hover:shadow-purple-600">
+                  <div className="bg-gray-700 rounded flex p-4 h-full items-center cursor-pointer shadow-md hover:bg-gray-600 transition duration-300 hover:scale-105 hover:shadow-purple-600">
                     <span className="text-2xl">{skill.icon}</span>
                     <span className="title-font font-medium text-white ml-3">
                       {skill.name}
