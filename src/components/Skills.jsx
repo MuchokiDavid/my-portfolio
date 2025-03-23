@@ -7,150 +7,144 @@ import {
   FaPython,
   FaGitAlt,
   FaLinux,
+  FaNodeJs,
+  FaDocker,
+  FaAws,
+  FaSass,
+  FaDatabase,
+  FaBootstrap,
 } from "react-icons/fa";
-import { SiDjango, SiFlask, SiPostgresql, SiMysql, SiCpanel, SiPostman, SiNpm } from "react-icons/si";
+import {
+  SiDjango,
+  SiFlask,
+  SiPostgresql,
+  SiMysql,
+  SiCpanel,
+  SiPostman,
+  SiNpm,
+  SiTailwindcss,
+  SiTypescript,
+  SiRedux,
+  SiMongodb,
+  SiFirebase,
+  SiNginx,
+  SiJira,
+  SiGraphql,
+  SiWebpack,
+  SiJest,
+  SiNetlify,
+  SiVercel,
+  SiRender,
+  SiSqlite,
+  SiGooglecloud,
+  SiNgrok,
+} from "react-icons/si";
 import { IoLogoFigma } from "react-icons/io5";
+import { VscVscode } from "react-icons/vsc";
 
 
 export default function Skills() {
+  // Organize skills into stacks
+  const skillStacks = [
+    {
+      name: "Frontend Development",
+      skills: [
+        { name: "HTML", icon: <FaHtml5 color="#E34F26" /> },
+        { name: "CSS", icon: <FaCss3Alt color="#1572B6" /> },
+        { name: "JavaScript", icon: <FaJs color="#F7DF1E" /> },
+        { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
+        { name: "React", icon: <FaReact color="#61DAFB" /> },
+        { name: "Redux", icon: <SiRedux color="#764ABC" /> },
+        { name: "Sass", icon: <FaSass color="#CC6699" /> },
+        { name: "Bootstrap", icon: <FaBootstrap color="#7952B3" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4" /> },
+        { name: "Webpack", icon: <SiWebpack color="#8DD6F9" /> },
+      ]
+    },
+    {
+      name: "Backend Development",
+      skills: [
+        { name: "Python", icon: <FaPython color="#3776AB" /> },
+        { name: "Django", icon: <SiDjango color="#092E20" /> },
+        { name: "Flask", icon: <SiFlask color="#000000" /> },
+        { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
+        { name: "Ngrok", icon: <SiNgrok color="#E10098" /> },
+      ]
+    },
+    {
+      name: "Database & Storage",
+      skills: [
+        { name: "PostgreSQL", icon: <SiPostgresql color="#336791" /> },
+        { name: "SQLite", icon: <SiSqlite color="#47A248" /> },
+        { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
+        { name: "IndexedDB", icon: <FaDatabase color="#F7DF1E" /> },
+        { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
+      ]
+    },
+    {
+      name: "DevOps & Tools",
+      skills: [
+        { name: "Git", icon: <FaGitAlt color="#F05032" /> },
+        { name: "Linux", icon: <FaLinux color="#FCC624" /> },
+        { name: "AWS", icon: <FaAws color="#FF9900" /> },
+        { name: "NPM", icon: <SiNpm color="#CB3837" /> },
+        { name: "Google Cloud", icon: <SiGooglecloud color="#4285F4" /> },
+        { name: "Postman", icon: <SiPostman color="#FF6C37" /> },
+        { name: "VS Code", icon: <VscVscode className="text-blue-500" /> },
+        { name: "Docker", icon: <FaDocker color="#2496ED" /> },
+        { name: "Jest", icon: <SiJest color="#C21325" /> },
+        { name: "Jira", icon: <SiJira color="#0052CC" /> },
+      ]
+    },
+    {
+      name: "Design & Deployment",
+      skills: [
+        { name: "Figma", icon: <IoLogoFigma color="#F24E1E" /> },
+        { name: "Cpanel", icon: <SiCpanel color="#FF6C2C" /> },
+        { name: "Netlify", icon: <SiNetlify color="#00C7B7" /> },
+        { name: "Vercel", icon: <SiVercel color="#000000" /> },
+        { name: "Render", icon: <SiRender className="text-black" /> },
+      ]
+    },
+  ];
+
   return (
-    <div id="skills" className="mt-8">
-      <div className="container px-2 py-6 mx-auto">
-        <div className="text-center mb-20">
+    <div id="skills" className="my-12">
+      <div className="">
+        <div className="text-center mb-16">
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-gray-300 mb-4">
-            Skills
+            Skills & Technologies
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            I have a wide range of skills and I am always looking to learn new
-            things. I am currently learning how to use Django and React and I am looking to
-            learn more about the mobile apps side of things.
+            I have expertise across multiple technologies and frameworks with a focus on full-stack development.
+            Currently enhancing my knowledge in Django, React, and exploring mobile application development.
           </p>
           <div className="flex mt-4 justify-center">
             <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
         </div>
-        {/* <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2"> */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-2 place-items-center">
-          {/* HTML */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <FaHtml5 className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">HTML</span>
+
+        {/* Display each stack */}
+        {skillStacks.map((stack, stackIndex) => (
+          <div key={stackIndex} className="mb-12">
+            <h2 className="text-2xl font-medium text-gray-200 mb-6 text-center">
+              {stack.name}
+            </h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 place-items-center">
+              {/* Loop through skills in this stack */}
+              {stack.skills.map((skill, skillIndex) => (
+                <div key={skillIndex} className="p-2 w-full">
+                  <div className="bg-gray-700 rounded flex p-4 h-full items-center cursor-pointer shadow-lg hover:bg-gray-600 transition duration-300 hover:scale-105 hover:shadow-purple-600">
+                    <span className="text-2xl">{skill.icon}</span>
+                    <span className="title-font font-medium text-white ml-3">
+                      {skill.name}
+                    </span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-
-          {/* CSS */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <FaCss3Alt className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">CSS</span>
-            </div>
-          </div>
-
-          {/* JavaScript */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center"> 
-              <FaJs className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">JavaScript</span>
-            </div>
-          </div>
-
-          {/* React */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <FaReact className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">React</span>
-            </div>
-          </div>
-
-          {/* Python */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <FaPython className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">Python</span>
-            </div>
-          </div>
-
-          {/* Django */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <SiDjango className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">Django</span>
-            </div>
-          </div>
-
-          {/* Flask */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <SiFlask className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">Flask</span>
-            </div>
-          </div>
-
-          {/* Git */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <FaGitAlt className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">Git</span>
-            </div>
-          </div>
-
-          {/* Linux */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <FaLinux className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">Linux</span>
-            </div>
-          </div>
-
-          {/* cPanel */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <SiCpanel className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">cPanel</span>
-            </div>
-          </div>
-
-          {/* PostgreSQL */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <SiPostgresql className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">PostgreSQL</span>
-            </div>
-          </div>
-
-          {/* MySQL */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <SiMysql className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">MySQL</span>
-            </div>
-          </div>
-
-          {/* Figma */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <IoLogoFigma className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">Figma</span>
-            </div>
-          </div>
-
-          {/* npm */}
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <SiPostman className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">Postman</span>
-            </div>
-          </div>
-
-          <div className="p-2 sm:w-1/2 w-full">
-            <div className="bg-gray-800 rounded flex p-4 h-full min-w-fit items-center">
-              <SiNpm className="text-indigo-400 w-6 h-6 flex-shrink-0 mr-4" />
-              <span className="title-font font-medium text-white">NPM</span>
-            </div>
-          </div>
-
-        </div>
+        ))}
       </div>
     </div>
   );
