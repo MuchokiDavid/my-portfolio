@@ -32,6 +32,8 @@ export default function Experience() {
         "Flask",
         "Django",
         "Payment Gateway Integration",
+        "API Development",
+        "Third-party API Integration",
         "Project Planning",,
         "Web scrapping"
       ],
@@ -78,7 +80,7 @@ export default function Experience() {
       ],
     },
     {
-      title: "ICT Officer Intern",
+      title: "ICT Officer",
       company: "Ministry of Education",
       location: "Murang'a, Kenya",
       period: "October 2021 - September 2022",
