@@ -125,7 +125,7 @@ export default function Footer() {
                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
               >
                 <span className="sr-only">X</span>
-                <FaXTwitter className="w-6 h-6 text-black" />
+                <FaXTwitter className="w-6 h-6 text-white" />
               </a>
             </li>
 
