@@ -5,8 +5,8 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Footer() {
   return (
     <div>
-      {/* <hr className="border-t border-gray-100 dark:border-gray-400" /> */}
-      <footer className="bg-gray-900">
+      <hr className="border-t border-gray-500 dark:border-gray-400" />
+      <footer>
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
             Let's connect! Feel free to reach out via{" "}
