@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 dark:text-gray-400">
             Let's connect! Feel free to reach out via{" "}
-            <a href="mailto:your-email@example.com">email</a> or find me on{" "}
+            <a href="mailto:dmmuchoki7@gmail.com" className="text-white">Email</a> or <a href="https://wa.me/254723018212" className="text-white">WhatsApp</a> or find me on{" "}
             <a
               href="https://github.com/MuchokiDavid"
               target="_blank"
@@ -137,7 +137,7 @@ export default function Footer() {
                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
               >
                 <span className="sr-only">Facebook</span>
-                <FaFacebook className="w-6 h-6 text-blue-600" />
+                <FaFacebook className="w-6 h-6 text-blue-400" />
               </a>
             </li>
 
