@@ -3,11 +3,15 @@
   transition: all 0.3s ease-in-out;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   @apply bg-black text-white;
   /* @apply bg-[url(./assets/bg.jpg)]; */
-  background-image: url('./assets/bg.jpg');
+  background-image: url("./assets/bg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
