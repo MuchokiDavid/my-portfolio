@@ -34,8 +34,9 @@ export default function Experience() {
         "Payment Gateway Integration",
         "API Development",
         "Third-party API Integration",
-        "Project Planning",,
-        "Web scrapping"
+        "Project Planning",
+        ,
+        "Web scrapping",
       ],
     },
     {
@@ -79,6 +80,29 @@ export default function Experience() {
         "Hardware Maintenance",
       ],
     },
+
+    {
+      title: "Presiding Officer (Election Technology Lead)",
+      company: "Independent Electoral and Boundaries Commission (IEBC)",
+      location: "Murang'a, Kenya",
+      period: "August 2022",
+      description: [
+        "Directed tech-enabled election operations at a high-traffic polling station, ensuring 100% compliance with digital voting protocols and regulatory requirements.",
+        "Trained and supervised 8 polling clerks in using KIEMS biometric systems, improving voter authentication efficiency by 30% during peak hours.",
+        "Implemented secure chain-of-custody procedures for sensitive digital/printed materials (ballot papers, KIEMS devices, results slips) with zero discrepancies.",
+        "Troubleshot real-time technical issues with the Kenya Integrated Elections Management System (KIEMS), ensuring uninterrupted voter verification and results transmission.",
+        "Led the digital reconciliation and reporting of election results using secure government systems, maintaining full audit transparency.",
+      ],
+      technologies: [
+        "KIEMS Biometric Systems",
+        "Election Management Software",
+        "Data Integrity Protocols",
+        "Process Automation",
+        "Team Coordination",
+        "Compliance Management",
+      ],
+    },
+    
     {
       title: "ICT Officer",
       company: "Ministry of Education",
@@ -99,6 +123,7 @@ export default function Experience() {
         "ICT Integration",
       ],
     },
+
     {
       title: "ICT Support Attachment",
       company: "KCA University",
@@ -271,7 +296,7 @@ export default function Experience() {
                       {exp.technologies.map((tech, idx) => (
                         <span
                           key={idx}
-                          className="bg-gray-900 text-indigo-400 text-xs px-2 py-1 md:px-3 rounded-full"
+                          className="bg-gray-900 text-indigo-200 text-xs px-2 py-1 md:px-3 rounded-full"
                         >
                           {tech}
                         </span>
@@ -300,21 +325,17 @@ export default function Experience() {
           .scrollbar-hide::-webkit-scrollbar {
             display: none;
           }
-
-          @media (max-width: 768px) {
-            .touch-pan-x {
-              -webkit-overflow-scrolling: touch;
-              scroll-snap-type: x mandatory;
-              scroll-behavior: smooth;
-            }
+          .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
           }
-
-          .line-clamp-1 {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
+          @media (max-width: 767px) {
+            .snap-x {
+              scroll-snap-type: x mandatory;
+            }
+            .snap-center {
+              scroll-snap-align: center;
+            }
           }
         `}</style>
       </div>

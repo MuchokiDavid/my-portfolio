@@ -252,7 +252,7 @@ const Projects = () => {
                       {project.technologies.map((tech, idx) => (
                         <span
                           key={idx}
-                          className="bg-gray-900 text-indigo-400 text-xs px-2 py-1 md:px-3 rounded-full"
+                          className="bg-gray-900 text-indigo-200 text-xs px-2 py-1 md:px-3 rounded-full"
                         >
                           {tech}
                         </span>
