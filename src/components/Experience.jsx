@@ -275,7 +275,7 @@ export default function Experience() {
           >
             {experiences.map((exp, index) => (
               <SwiperSlide key={index} className="snap-center">
-                <div className="h-full bg-gray-800 bg-opacity-40 p-4 md:p-6 rounded-lg border border-gray-700 hover:border-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/20">
+                <div className="h-full bg-gray-800 bg-opacity-40 p-4 md:py-6 md:px-14 rounded-lg border border-gray-700 hover:border-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/20">
                   <div className="flex items-center mb-4">
                     <div className="bg-indigo-500 text-white p-2 md:p-3 rounded-full mr-3 md:mr-4">
                       <FaBriefcase className="text-lg md:text-xl" />
