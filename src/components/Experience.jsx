@@ -8,6 +8,24 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import {
+  EffectCoverflow,
+  Pagination,
+  Keyboard,
+  Navigation,
+  Mousewheel,
+} from "swiper/modules";
+
 export default function Experience() {
   const scrollContainerRef = useRef(null);
   const [showLeftButton, setShowLeftButton] = useState(false);
@@ -102,7 +120,7 @@ export default function Experience() {
         "Compliance Management",
       ],
     },
-    
+
     {
       title: "ICT Officer",
       company: "Ministry of Education",
@@ -244,20 +262,19 @@ export default function Experience() {
           )}
 
           {/* Experience cards container with horizontal scroll */}
-          <div
-            ref={scrollContainerRef}
-            className="flex overflow-x-auto pb-6 scrollbar-hide snap-x snap-mandatory touch-pan-x"
-            style={{
-              scrollbarWidth: "none",
-              msOverflowStyle: "none",
-              WebkitOverflowScrolling: "touch",
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
             }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
           >
             {experiences.map((exp, index) => (
-              <div
-                key={index}
-                className="px-2 md:px-4 min-w-[300px] sm:min-w-[350px] md:min-w-[450px] lg:min-w-[500px] snap-start"
-              >
+              <SwiperSlide key={index} className="snap-center">
                 <div className="h-full bg-gray-800 bg-opacity-40 p-4 md:p-6 rounded-lg border border-gray-700 hover:border-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/20">
                   <div className="flex items-center mb-4">
                     <div className="bg-indigo-500 text-white p-2 md:p-3 rounded-full mr-3 md:mr-4">
@@ -304,40 +321,21 @@ export default function Experience() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
-
-          {/* Right scroll button - only visible on non-mobile */}
-          {!isMobile && showRightButton && (
-            <button
-              onClick={handleScrollRight}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-200 focus:outline-none"
-              aria-label="Scroll right"
-            >
-              <FaChevronRight />
-            </button>
-          )}
+          </Swiper>
         </div>
 
-        {/* Custom CSS to hide scrollbar but keep functionality */}
-        <style jsx>{`
-          .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-          }
-          .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-          }
-          @media (max-width: 767px) {
-            .snap-x {
-              scroll-snap-type: x mandatory;
-            }
-            .snap-center {
-              scroll-snap-align: center;
-            }
-          }
-        `}</style>
+        {/* Right scroll button - only visible on non-mobile */}
+        {!isMobile && showRightButton && (
+          <button
+            onClick={handleScrollRight}
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-200 focus:outline-none"
+            aria-label="Scroll right"
+          >
+            <FaChevronRight />
+          </button>
+        )}
       </div>
     </div>
   );
