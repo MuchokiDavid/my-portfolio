@@ -298,7 +298,7 @@ export default function Experience() {
               // },
             }}
             navigation={true}
-            modules={[Pagination, Navigation]}
+            modules={[Pagination, Navigation, Keyboard, Navigation]}
             className="mySwiper"
           >
             {experiences.map((exp, index) => (

@@ -235,16 +235,20 @@ const Projects = () => {
               enabled: true,
             }}
             breakpoints={{
-              769: {
+              640: {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+              },
+              768: {
                 slidesPerView: 2,
-                slidesPerGroup: 2,
+                slidesPerGroup: 1,
               },
             }}
             scrollbar={true}
-            onSwiper={(swiper) => {
-              scrollContainerRef.current = swiper.el;
-              swiper.el.addEventListener("scroll", handleScroll);
-            }}
+            // onSwiper={(swiper) => {
+            //   scrollContainerRef.current = swiper.el;
+            //   swiper.el.addEventListener("scroll", handleScroll);
+            // }}
             // onTouchEnd={() => {
             //   if (scrollContainerRef.current) {
             //     scrollContainerRef.current.style.overflow = "auto";
@@ -265,7 +269,7 @@ const Projects = () => {
               slideShadows: true,
             }}
             pagination={true}
-            modules={[EffectCoverflow, Pagination, Keyboard, Navigation, Mousewheel]}
+            modules={[EffectCoverflow, Pagination, Keyboard, Navigation]}
             className="mySwiper"
           >
             {projects.map((project, index) => (
