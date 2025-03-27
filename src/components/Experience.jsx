@@ -88,6 +88,7 @@ export default function Experience() {
         "Managed the hospital's IT infrastructure, including planning, maintenance, and sourcing in line with the hospital's needs.",
         "Implemented information security systems and measures to ensure the hospital's ICT environment was secure and compliant with industry standards.",
         "Conducted training sessions for staff on the usage of different hospital infrastructures, including hardware and software.",
+        "Provided technical support and maintenance of hospital ICT services to ensure smooth operations and customer satisfaction.",
       ],
       technologies: [
         "IT Infrastructure Management",
@@ -107,8 +108,8 @@ export default function Experience() {
       description: [
         "Directed tech-enabled election operations at a high-traffic polling station, ensuring 100% compliance with digital voting protocols and regulatory requirements.",
         "Trained and supervised 8 polling clerks in using KIEMS biometric systems, improving voter authentication efficiency by 30% during peak hours.",
-        "Implemented secure chain-of-custody procedures for sensitive digital/printed materials (ballot papers, KIEMS devices, results slips) with zero discrepancies.",
-        "Troubleshot real-time technical issues with the Kenya Integrated Elections Management System (KIEMS), ensuring uninterrupted voter verification and results transmission.",
+        // "Implemented secure chain-of-custody procedures for sensitive digital/printed materials (ballot papers, KIEMS devices, results slips) with zero discrepancies.",
+        "Troubleshoot real-time technical issues with the Kenya Integrated Elections Management System (KIEMS), ensuring uninterrupted voter verification and results transmission.",
         "Led the digital reconciliation and reporting of election results using secure government systems, maintaining full audit transparency.",
       ],
       technologies: [
@@ -128,7 +129,7 @@ export default function Experience() {
       period: "October 2021 - September 2022",
       description: [
         "Supported E-Learning and content development in line with the schools' schemes of work, enhancing the delivery of digital education.",
-        "Provided classroom support and conducted training sessions for teachers and staff on the effective use of digital literacy devices.",
+        // "Provided classroom support and conducted training sessions for teachers and staff on the effective use of digital literacy devices.",
         "Implemented innovative solutions to help schools improve their use of digital learning tools and techniques.",
         "Provided guidance in the safe, secure, and ethical use of technology in educational environments.",
         "Assisted teachers in integrating ICT into teaching, learning, assessment, and reporting processes.",
@@ -136,9 +137,13 @@ export default function Experience() {
       ],
       technologies: [
         "E-Learning",
-        "Digital Literacy",
         "Technical Support",
         "ICT Integration",
+        "Training",
+        "Content Development",
+        "Digital Education",
+        "Technical Support",
+        "Network Management",
       ],
     },
 
@@ -152,12 +157,17 @@ export default function Experience() {
         "Installed and configured software applications across various departments, ensuring functionality and compliance with licensing agreements.",
         "Created and configured WiFi user accounts and devices to enable seamless connectivity and access to network resources for users.",
         "Conducted computer repair and maintenance, diagnosing and resolving hardware issues, and ensuring optimal performance of ICT infrastructure.",
+        "Provided technical support to faculty and staff, troubleshooting and resolving software and hardware issues, and ensuring smooth operation of ICT systems.",
       ],
       technologies: [
         "Technical Support",
         "Software Installation",
         "Network Configuration",
         "Hardware Maintenance",
+        "ICT Infrastructure",
+        "Software Troubleshooting",
+        "Network Security",
+        "ICT Support Attachment",
       ],
     },
   ];
@@ -263,19 +273,37 @@ export default function Experience() {
 
           {/* Experience cards container with horizontal scroll */}
           <Swiper
-            slidesPerView={1}
+            slidesPerView={"auto"}
             spaceBetween={30}
+            grabCursor={true}
             loop={true}
+            keyboard={{
+              enabled: true,
+            }}
             pagination={{
               clickable: true,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              // 1024: {
+              //   slidesPerView: 3,
+              //   spaceBetween: 50,
+              // },
             }}
             navigation={true}
             modules={[Pagination, Navigation]}
             className="mySwiper"
           >
             {experiences.map((exp, index) => (
-              <SwiperSlide key={index} className="snap-center">
-                <div className="h-full bg-gray-800 bg-opacity-40 p-4 md:py-6 md:px-14 rounded-lg border border-gray-700 hover:border-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/20">
+              <SwiperSlide key={index} className="snap-center h-full">
+                <div className="flex flex-col h-full min-h-[400px] bg-gray-800 bg-opacity-40 p-4 md:py-6 md:px-14 rounded-lg border border-gray-700 hover:border-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/20">
                   <div className="flex items-center mb-4">
                     <div className="bg-indigo-500 text-white p-2 md:p-3 rounded-full mr-3 md:mr-4">
                       <FaBriefcase className="text-lg md:text-xl" />
@@ -284,7 +312,6 @@ export default function Experience() {
                       {exp.title}
                     </h2>
                   </div>
-
                   <div className="mb-4 text-gray-400 text-sm md:text-base">
                     <div className="flex items-center mb-2">
                       <FaBuilding className="mr-2 flex-shrink-0" />
@@ -299,16 +326,14 @@ export default function Experience() {
                       <span>{exp.period}</span>
                     </div>
                   </div>
-
-                  <ul className="list-disc pl-5 md:pl-6 mb-6 text-gray-400 text-sm md:text-base">
+                  <ul className="list-disc pl-5 md:pl-6 mb-6 text-gray-400 text-sm md:text-base flex-grow">
                     {exp.description.map((item, idx) => (
                       <li key={idx} className="mb-2">
                         {item}
                       </li>
                     ))}
                   </ul>
-
-                  <div className="pt-4 border-t border-gray-700">
+                  <div className="pt-4 border-t border-gray-700 mt-auto">
                     <div className="flex flex-wrap gap-2 mt-2">
                       {exp.technologies.map((tech, idx) => (
                         <span
@@ -327,7 +352,7 @@ export default function Experience() {
         </div>
 
         {/* Right scroll button - only visible on non-mobile */}
-        {!isMobile && showRightButton && (
+        {/* {!isMobile && showRightButton && (
           <button
             onClick={handleScrollRight}
             className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-200 focus:outline-none"
@@ -335,7 +360,7 @@ export default function Experience() {
           >
             <FaChevronRight />
           </button>
-        )}
+        )} */}
       </div>
     </div>
   );
