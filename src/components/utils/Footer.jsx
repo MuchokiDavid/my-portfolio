@@ -54,6 +54,7 @@ export default function Footer() {
               <a
                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
                 href="https://docs.google.com/document/d/14p8YYtz8pOwzfFtClguf9gudgfU4y2ZXHbF-cx-08NA/edit?usp=sharing"
+                target="_blank"
               >
                 Resume
               </a>
