@@ -24,12 +24,8 @@ import {
   SiNpm,
   SiTailwindcss,
   SiTypescript,
-  SiRedux,
-  SiMongodb,
   SiFirebase,
-  SiNginx,
   SiJira,
-  SiGraphql,
   SiWebpack,
   SiJest,
   SiNetlify,
@@ -37,11 +33,12 @@ import {
   SiRender,
   SiSqlite,
   SiGooglecloud,
+  SiVite,
   SiNgrok,
+  SiGithub
 } from "react-icons/si";
 import { IoLogoFigma } from "react-icons/io5";
 import { VscVscode } from "react-icons/vsc";
-
 
 export default function Skills() {
   // Organize skills into stacks
@@ -54,7 +51,7 @@ export default function Skills() {
         { name: "JavaScript", icon: <FaJs color="#F7DF1E" /> },
         { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
         { name: "React", icon: <FaReact color="#61DAFB" /> },
-        { name: "Redux", icon: <SiRedux color="#764ABC" /> },
+        { name: "Vite", icon: <SiVite className="text-fuchsia-500" /> },
         { name: "Sass", icon: <FaSass color="#CC6699" /> },
         { name: "Bootstrap", icon: <FaBootstrap color="#7952B3" /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4" /> },
@@ -86,7 +83,7 @@ export default function Skills() {
       skills: [
         { name: "Git", icon: <FaGitAlt color="#F05032" /> },
         { name: "Linux", icon: <FaLinux color="#FCC624" /> },
-        { name: "AWS", icon: <FaAws color="#FF9900" /> },
+        { name: "Github", icon: <SiGithub color="#FFF" /> },
         { name: "NPM", icon: <SiNpm color="#CB3837" /> },
         { name: "Google Cloud", icon: <SiGooglecloud color="#4285F4" /> },
         { name: "Postman", icon: <SiPostman color="#FF6C37" /> },
