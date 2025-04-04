@@ -58,7 +58,8 @@ export default function AboutHero() {
         </div>
         <img
           className="md:max-w-[30%] sm:max-w-[40%] max-w-[70%] sm:rounded-sm sm:rounded-br-[5rem] sm:rounded-tl-[5rem] rounded-full sm:outline-none outline-[.3rem] outline-green-400/60"
-          src={passport}
+          // src={passport}
+          src="https://techakim.com/sam/tg/7268/li/imgs/2.png"
           alt="My Pic"
         />
       </div>
