@@ -23,6 +23,13 @@ export default function AboutHero() {
                   "Frontend Developer", // Deletes 'One' and types 'Two'
                   2000, // Waits 2s
                   "Backend Developer", // Types 'Three' without deleting 'Two'
+                  2000, // Waits 2s
+                  "DevOps Engineer", // Types 'Three' without deleting 'Two'
+                  2000, // Waits 2s
+                  "Computer Enthusiast", // Types 'Three' without deleting 'Two'
+                  2000, // Waits 2s
+                  "Tech Guru", // Types 'Three' without deleting 'Two'
+                  2000, // Waits 2s
                   () => {
                     // console.log("Sequence completed");
                   },
