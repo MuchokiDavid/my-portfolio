@@ -32,7 +32,7 @@ export default function Contact() {
           setPhone("");
           setMessage("");
           setLoading(false);
-          toast.success("Form submitted successfully!", {
+          toast.success("Message sent successfully!", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
