@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import passport from "../../assets/passport.jpg";
+import Profile from "../../assets/profile.jpg"
 
 export default function AboutHero() {
   return (
@@ -28,7 +28,7 @@ export default function AboutHero() {
                   2000, // Waits 2s
                   "Computer Enthusiast", // Types 'Three' without deleting 'Two'
                   2000, // Waits 2s
-                  "Tech Guru", // Types 'Three' without deleting 'Two'
+                  "Tech Learner", // Types 'Three' without deleting 'Two'
                   2000, // Waits 2s
                   () => {
                     // console.log("Sequence completed");
@@ -65,8 +65,7 @@ export default function AboutHero() {
         </div>
         <img
           className="md:max-w-[30%] sm:max-w-[40%] max-w-[70%] sm:rounded-sm sm:rounded-br-[5rem] sm:rounded-tl-[5rem] rounded-full sm:outline-none outline-[.3rem] outline-green-400/60"
-          // src={passport}
-          src="https://techakim.com/sam/tg/7268/li/imgs/2.png"
+          src={Profile}
           alt="My Pic"
         />
       </div>
