@@ -44,6 +44,8 @@ export default function Experience() {
         "Integrate APIs and third-party services.",
         "Actively participate in project planning, requirement analysis, and solution design to meet project goals and deliverables.",
         "Participate in code reviews, testing, and debugging processes.",
+        "Work with relational databases such as PostgreSQL and MySQL.",
+        "Optimize application performance and ensure responsiveness."
       ],
       technologies: [
         "Javascript",
@@ -175,11 +177,11 @@ export default function Experience() {
       location: "Nairobi, Kenya",
       period: "January 2018 - March 2018",
       description: [
-        "Provided comprehensive end-user support to students, faculty, and staff, resolving technical issues in a timely and efficient manner.",
-        "Installed and configured software applications across various departments, ensuring functionality and compliance with licensing agreements.",
-        "Created and configured WiFi user accounts and devices to enable seamless connectivity and access to network resources for users.",
-        "Conducted computer repair and maintenance, diagnosing and resolving hardware issues, and ensuring optimal performance of ICT infrastructure.",
-        "Provided technical support to faculty and staff, troubleshooting and resolving software and hardware issues, and ensuring smooth operation of ICT systems.",
+        "Provided comprehensive end-user support resolving technical issues.",
+        "Installed and configured software applications across various departments.",
+        "Created and configured WiFi user accounts and devices to enable seamless connectivity and access to network resources.",
+        "Computer repair and maintenance, diagnosing and resolving hardware issues, and ensuring optimal performance of ICT infrastructure.",
+        "Provided technical support to faculty and staff, troubleshooting and resolving software and hardware issues.",
       ],
       technologies: [
         "Technical Support",
@@ -324,47 +326,49 @@ export default function Experience() {
             className="mySwiper"
           >
             {experiences.map((exp, index) => (
-              <SwiperSlide key={index} className="snap-center h-full">
-                <div className="flex flex-col h-full min-h-[400px] bg-gray-800 bg-opacity-40 p-4 md:py-6 md:px-14 rounded-lg border border-gray-700 hover:border-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/20">
-                  <div className="flex items-center mb-4">
-                    <div className="bg-indigo-500 text-white p-2 md:p-3 rounded-full mr-3 md:mr-4">
-                      <FaBriefcase className="text-lg md:text-xl" />
+              <SwiperSlide key={index} className="snap-center" style={{ height: '600px' }}>
+                <div className="flex flex-col h-full bg-gray-800 bg-opacity-40 rounded-lg border border-gray-700 hover:border-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/20">
+                  <div className="flex-1 overflow-y-auto p-4 md:py-6 md:px-14">
+                    <div className="flex items-center mb-4">
+                      <div className="bg-indigo-500 text-white p-2 md:p-3 rounded-full mr-3 md:mr-4">
+                        <FaBriefcase className="text-lg md:text-xl" />
+                      </div>
+                      <h2 className="text-lg md:text-xl font-medium text-white title-font line-clamp-1">
+                        {exp.title}
+                      </h2>
                     </div>
-                    <h2 className="text-lg md:text-xl font-medium text-white title-font line-clamp-1">
-                      {exp.title}
-                    </h2>
-                  </div>
-                  <div className="mb-4 text-gray-400 text-sm md:text-base">
-                    <div className="flex items-center mb-2">
-                      <FaBuilding className="mr-2 flex-shrink-0" />
-                      <span className="line-clamp-1">{exp.company}</span>
+                    <div className="mb-4 text-gray-400 text-sm md:text-base">
+                      <div className="flex items-center mb-2">
+                        <FaBuilding className="mr-2 flex-shrink-0" />
+                        <span className="line-clamp-1">{exp.company}</span>
+                      </div>
+                      <div className="flex items-center mb-2">
+                        <FaMapMarkerAlt className="mr-2 flex-shrink-0" />
+                        <span className="line-clamp-1">{exp.location}</span>
+                      </div>
+                      <div className="flex items-center">
+                        <FaCalendarAlt className="mr-2 flex-shrink-0" />
+                        <span>{exp.period}</span>
+                      </div>
                     </div>
-                    <div className="flex items-center mb-2">
-                      <FaMapMarkerAlt className="mr-2 flex-shrink-0" />
-                      <span className="line-clamp-1">{exp.location}</span>
-                    </div>
-                    <div className="flex items-center">
-                      <FaCalendarAlt className="mr-2 flex-shrink-0" />
-                      <span>{exp.period}</span>
-                    </div>
-                  </div>
-                  <ul className="list-disc pl-5 md:pl-6 mb-6 text-gray-400 text-sm md:text-base flex-grow">
-                    {exp.description.map((item, idx) => (
-                      <li key={idx} className="mb-2">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="pt-4 border-t border-gray-700 mt-auto">
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {exp.technologies.map((tech, idx) => (
-                        <span
-                          key={idx}
-                          className="bg-gray-900 text-indigo-200 text-xs px-2 py-1 md:px-3 rounded-full"
-                        >
-                          {tech}
-                        </span>
+                    <ul className="list-disc pl-5 md:pl-6 mb-6 text-gray-400 text-sm md:text-base">
+                      {exp.description.map((item, idx) => (
+                        <li key={idx} className="mb-2">
+                          {item}
+                        </li>
                       ))}
+                    </ul>
+                    <div className="pt-4 border-t border-gray-700">
+                      <div className="flex flex-wrap gap-2 mt-2">
+                        {exp.technologies.map((tech, idx) => (
+                          <span
+                            key={idx}
+                            className="bg-gray-900 text-indigo-200 text-xs px-2 py-1 md:px-3 rounded-full"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
