@@ -273,18 +273,11 @@ const Projects = () => {
             className="mySwiper"
           >
             {projects.map((project, index) => (
-              <SwiperSlide key={index} className="flex justify-center">
-                <div
-                  key={index}
-                  className="px-2 md:px-4 min-w-[300px] sm:min-w-[350px] md:min-w-[450px] lg:min-w-[500px] snap-start"
-                >
-                  <div
-                    className=" h-full flex flex-col bg-gray-800 bg-opacity-40 p-4 md:p-6 rounded-lg border border-gray-700 hover:border-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/20"
-                    style={{
-                      touchAction: isMobile ? "pan-y" : "auto",
-                    }}
-                  >
-                    <div className="flex items-center mb-4">
+              <SwiperSlide key={index} className="flex justify-center" style={{ height: '450px' }}>
+                <div className="px-2 md:px-4 min-w-[300px] sm:min-w-[350px] md:min-w-[450px] lg:min-w-[500px] h-full">
+                  <div className="h-full flex flex-col bg-gray-800 bg-opacity-40 rounded-lg border border-gray-700 hover:border-indigo-500 transition-all duration-300 shadow-lg hover:shadow-indigo-500/20">
+                    <div className="flex-1 overflow-y-auto p-4 md:p-6">
+                      <div className="flex items-center mb-4">
                       <div className="bg-indigo-500 text-white p-2 md:p-3 rounded-full mr-3 md:mr-4">
                         <FaCode className="text-lg md:text-xl" />
                       </div>
@@ -293,37 +286,37 @@ const Projects = () => {
                       </h2>
                     </div>
 
-                    <div className="mb-4 text-gray-400 text-sm md:text-base">
-                      <div className="flex items-center mb-2">
-                        <FaGithub className="mr-2 flex-shrink-0" />
-                        <span className="line-clamp-1">
-                          <a
-                            href={project.githubLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:text-indigo-500"
-                          >
-                            GitHub Repository
-                          </a>
-                        </span>
-                      </div>
-                      {project.liveLink && (
-                        <div className="flex items-center">
-                          <FaLink className="mr-2 flex-shrink-0" />
+                      <div className="mb-4 text-gray-400 text-sm md:text-base">
+                        <div className="flex items-center mb-2">
+                          <FaGithub className="mr-2 flex-shrink-0" />
                           <span className="line-clamp-1">
                             <a
-                              href={project.liveLink}
+                              href={project.githubLink}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="hover:text-indigo-500"
                             >
-                              Live Demo
+                              GitHub Repository
                             </a>
                           </span>
                         </div>
-                      )}
-                    </div>
-                    <div className="flex-grow mb-2">
+                        {project.liveLink && (
+                          <div className="flex items-center">
+                            <FaLink className="mr-2 flex-shrink-0" />
+                            <span className="line-clamp-1">
+                              <a
+                                href={project.liveLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:text-indigo-500"
+                              >
+                                Live Demo
+                              </a>
+                            </span>
+                          </div>
+                        )}
+                      </div>
+
                       <ul className="list-disc pl-5 md:pl-6 mb-6 text-gray-400 text-sm md:text-base">
                         {project.description.map((item, idx) => (
                           <li key={idx} className="mb-2">
@@ -331,18 +324,18 @@ const Projects = () => {
                           </li>
                         ))}
                       </ul>
-                    </div>
 
-                    <div className="pt-4 border-t border-gray-700">
-                      <div className="flex flex-wrap gap-2 mt-2">
-                        {project.technologies.map((tech, idx) => (
-                          <span
-                            key={idx}
-                            className="bg-gray-900 text-indigo-200 text-xs px-2 py-1 md:px-3 rounded-full"
-                          >
-                            {tech}
-                          </span>
-                        ))}
+                      <div className="pt-4 border-t border-gray-700">
+                        <div className="flex flex-wrap gap-2 mt-2">
+                          {project.technologies.map((tech, idx) => (
+                            <span
+                              key={idx}
+                              className="bg-gray-900 text-indigo-200 text-xs px-2 py-1 md:px-3 rounded-full"
+                            >
+                              {tech}
+                            </span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </div>
