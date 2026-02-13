@@ -35,9 +35,10 @@ import {
   SiGooglecloud,
   SiVite,
   SiNgrok,
+  SiVuetify,
   SiGithub
 } from "react-icons/si";
-import { IoLogoFigma } from "react-icons/io5";
+import { IoLogoFigma, IoLogoVue } from "react-icons/io5";
 import { VscVscode } from "react-icons/vsc";
 
 export default function Skills() {
@@ -46,16 +47,18 @@ export default function Skills() {
     {
       name: "Frontend Development",
       skills: [
+        { name: "JavaScript", icon: <FaJs color="#F7DF1E" /> },
+        { name: "Vue", icon: <IoLogoVue color="#41B883" /> },
+        { name: "React", icon: <FaReact color="#61DAFB" /> },
+        { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
+        { name: "Vite", icon: <SiVite className="text-fuchsia-500" /> },
+        { name: "Vuetify", icon: <SiVuetify color="#41B883"/>},
         { name: "HTML", icon: <FaHtml5 color="#E34F26" /> },
         { name: "CSS", icon: <FaCss3Alt color="#1572B6" /> },
-        { name: "JavaScript", icon: <FaJs color="#F7DF1E" /> },
-        { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
-        { name: "React", icon: <FaReact color="#61DAFB" /> },
-        { name: "Vite", icon: <SiVite className="text-fuchsia-500" /> },
-        { name: "Sass", icon: <FaSass color="#CC6699" /> },
+        // { name: "Sass", icon: <FaSass color="#CC6699" /> },
         { name: "Bootstrap", icon: <FaBootstrap color="#7952B3" /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4" /> },
-        { name: "Webpack", icon: <SiWebpack color="#8DD6F9" /> },
+        // { name: "Webpack", icon: <SiWebpack color="#8DD6F9" /> },
       ]
     },
     {
@@ -66,7 +69,7 @@ export default function Skills() {
         { name: "Flask", icon: <SiFlask color="#000000" /> },
         { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
         { name: "Ngrok", icon: <SiNgrok className="text-blue-500" /> },
-      ]
+      ] 
     },
     {
       name: "Database & Storage",
