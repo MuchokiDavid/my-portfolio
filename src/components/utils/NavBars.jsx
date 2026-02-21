@@ -16,7 +16,7 @@ export default function NavBars() {
           <a href="#" className="flex items-center">
             <img src={cv} className="h-4 mr-3 sm:h-8" alt="Portfolio Logo" />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              MyPortfolio
+              Dave
             </span>
           </a>
           <div className="flex items-center lg:order-2">
