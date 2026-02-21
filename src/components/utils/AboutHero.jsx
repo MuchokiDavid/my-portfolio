@@ -43,7 +43,7 @@ export default function AboutHero() {
           </h1>
 
           <p className="mt-4 text-lg capitalize">
-            Experienced full-stack developer with 2+ years of expertise in
+            Experienced full-stack developer with 4+ years of expertise in
             Linux, Git, Javascript, React JS, Vite, Python, Django, Flask,
             and some DevOps experience.
           </p>
