@@ -24,7 +24,7 @@ export default function NavBars() {
               <span></span>
             </div>
             <a
-              href="https://docs.google.com/document/d/14p8YYtz8pOwzfFtClguf9gudgfU4y2ZXHbF-cx-08NA/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1R6nDA3NUnxptk83oOleGFAwkmFFHLwsO4w6R3F-hq20/edit?usp=sharing"
               target="_blank"
               className="text-white flex gap-0.5 bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800"
               rel="noopener noreferrer"
