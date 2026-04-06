@@ -65,7 +65,7 @@ export default function AboutHero() {
         </div>
         <img
           className="md:max-w-[30%] sm:max-w-[40%] max-w-[70%] sm:rounded-sm sm:rounded-br-[5rem] sm:rounded-tl-[5rem] rounded-full sm:outline-none outline-[.3rem] outline-green-400/60"
-          src={Profile}
+          src="https://avatars.githubusercontent.com/u/39527412?v=4"
           alt="My Pic"
         />
       </div>
