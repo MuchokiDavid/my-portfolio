@@ -55,7 +55,7 @@ export default function AboutHero() {
               Hire Me
             </a>
             <a
-              href="https://docs.google.com/document/d/14p8YYtz8pOwzfFtClguf9gudgfU4y2ZXHbF-cx-08NA/edit?usp=sharing"
+              href="https://docs.google.com/document/d/1R6nDA3NUnxptk83oOleGFAwkmFFHLwsO4w6R3F-hq20/edit?usp=sharing"
               target="_blank"
               className="p-2 px-6 text-white font-semibold rounded-full outline-2 outline-yellow-500 hover:bg-yellow-600 transition ease-in-out delay-150"
             >
