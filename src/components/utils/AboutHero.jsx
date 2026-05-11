@@ -18,17 +18,17 @@ export default function AboutHero() {
             <span className="libre-baskerville-bold text-green-500 ml-1">
               <TypeAnimation
                 sequence={[
-                  "FullStack Developer", // Types 'One'
+                  "FullStack Developer",
                   1000, // Waits 1s
-                  "Frontend Developer", // Deletes 'One' and types 'Two'
+                  "Frontend Developer",
                   2000, // Waits 2s
-                  "Backend Developer", // Types 'Three' without deleting 'Two'
+                  "Backend Developer",
                   2000, // Waits 2s
-                  "DevOps Engineer", // Types 'Three' without deleting 'Two'
+                  "DevOps Engineer",
                   2000, // Waits 2s
-                  "Computer Enthusiast", // Types 'Three' without deleting 'Two'
+                  "Computer Scientist",
                   2000, // Waits 2s
-                  "Tech Learner", // Types 'Three' without deleting 'Two'
+                  "Tech Bro",
                   2000, // Waits 2s
                   () => {
                     // console.log("Sequence completed");
