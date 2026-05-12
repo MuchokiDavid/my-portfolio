@@ -14,7 +14,7 @@ export default function AboutHero() {
             </span>
           </h4>
           <h1 className="mt-4 sm:text-4xl text-2xl">
-            I'm
+            I'm a
             <span className="libre-baskerville-bold text-green-500 ml-1">
               <TypeAnimation
                 sequence={[
