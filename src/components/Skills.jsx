@@ -34,7 +34,7 @@ import {
   SiSqlite,
   SiGooglecloud,
   SiVite,
-  SiCelery,
+  SiNestjs,
   SiVuetify,
   SiGithub
 } from "react-icons/si";
