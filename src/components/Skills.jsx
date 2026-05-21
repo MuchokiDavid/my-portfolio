@@ -38,6 +38,7 @@ import {
   SiVuetify,
   SiGithub
 } from "react-icons/si";
+import { DiRedis } from "react-icons/di";
 import { IoLogoFigma, IoLogoVue } from "react-icons/io5";
 import { VscVscode } from "react-icons/vsc";
 
@@ -78,7 +79,8 @@ export default function Skills() {
         { name: "SQLite", icon: <SiSqlite color="#47A248" /> },
         { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
         { name: "IndexedDB", icon: <FaDatabase color="#F7DF1E" /> },
-        { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
+        { name: "Redis", icon: <DiRedis color="#FFCA28" /> },
+        // { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
       ]
     },
     {
