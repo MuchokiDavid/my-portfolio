@@ -69,7 +69,7 @@ export default function Skills() {
         { name: "Django", icon: <SiDjango color="#092E20" /> },
         { name: "Flask", icon: <SiFlask color="#000000" /> },
         { name: "Node", icon: <FaNodeJs color="#339933" /> },
-        { name: "Nestjs", icon: <SiNestjs className="text-blue-500" /> },
+        { name: "Nestjs", icon: <SiNestjs color="#E1434E" /> },
       ] 
     },
     {
