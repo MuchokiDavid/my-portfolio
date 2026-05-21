@@ -34,7 +34,7 @@ import {
   SiSqlite,
   SiGooglecloud,
   SiVite,
-  SiNgrok,
+  SiDocker,
   SiVuetify,
   SiGithub
 } from "react-icons/si";
@@ -68,7 +68,7 @@ export default function Skills() {
         { name: "Django", icon: <SiDjango color="#092E20" /> },
         { name: "Flask", icon: <SiFlask color="#000000" /> },
         { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
-        { name: "Ngrok", icon: <SiNgrok className="text-blue-500" /> },
+        { name: "Docker", icon: <SiDocker className="text-blue-500" /> },
       ] 
     },
     {
