@@ -68,8 +68,8 @@ export default function Skills() {
         { name: "Python", icon: <FaPython color="#3776AB" /> },
         { name: "Django", icon: <SiDjango color="#092E20" /> },
         { name: "Flask", icon: <SiFlask color="#000000" /> },
-        { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
-        { name: "Celery", icon: <SiCelery className="text-blue-500" /> },
+        { name: "Node", icon: <FaNodeJs color="#339933" /> },
+        { name: "Nestjs", icon: <SiNestjs className="text-blue-500" /> },
       ] 
     },
     {
