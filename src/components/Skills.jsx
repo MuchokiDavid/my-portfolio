@@ -79,7 +79,7 @@ export default function Skills() {
         { name: "SQLite", icon: <SiSqlite color="#47A248" /> },
         { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
         { name: "IndexedDB", icon: <FaDatabase color="#F7DF1E" /> },
-        { name: "Redis", icon: <DiRedis color="#FFCA28" /> },
+        { name: "Redis", icon: <DiRedis color="#CB3837" /> },
         // { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
       ]
     },
