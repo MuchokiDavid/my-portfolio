@@ -19,7 +19,7 @@ export default function NavBars() {
               {"< "}
             </span>
             <span className="self-center text-2xl font-bold whitespace-nowrap text-green-500">
-              {" Dave"}
+              {" "}{" Dave"}
             </span>
             <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700">
               {" />"}
