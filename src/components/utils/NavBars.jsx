@@ -18,7 +18,7 @@ export default function NavBars() {
             <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700">
               {"< "}
             </span>
-            <span className="self-center text-2xl font-bold whitespace-nowrap text-grey-300">
+            <span className="self-center text-2xl font-bold whitespace-nowrap text-green-500">
               {" Dave"}
             </span>
             <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700">
