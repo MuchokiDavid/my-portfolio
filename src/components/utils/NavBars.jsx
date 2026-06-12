@@ -14,9 +14,9 @@ export default function NavBars() {
       <nav className="border-gray-200 py-3 bg-gray-900 sticky top-0 z-10">
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
           <a href="#" className="flex items-center">
-            <img src={cv} className="h-4 mr-3 sm:h-8" alt="Portfolio Logo" />
+            {/* <img src={cv} className="h-4 mr-3 sm:h-8" alt="Portfolio Logo" /> */}
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
-              Dave
+              < Dave />
             </span>
           </a>
           <div className="flex items-center lg:order-2">
