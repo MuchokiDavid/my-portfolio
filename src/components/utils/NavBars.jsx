@@ -15,13 +15,13 @@ export default function NavBars() {
         <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
           <a href="#" className="flex items-center">
             {/* <img src={cv} className="h-4 mr-3 sm:h-8" alt="Portfolio Logo" /> */}
-            <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700 dark:text-white">
+            <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700">
               {"< "}
             </span>
-            <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               {"Dave"}
             </span>
-            <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700 dark:text-white">
+            <span className="self-center text-2xl font-bold whitespace-nowrap text-purple-700">
               {" />"}
             </span>
           </a>
